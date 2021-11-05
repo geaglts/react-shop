@@ -1,12 +1,12 @@
 import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import '../styles/global.scss';
-import Home from '../pages/Home';
-import NotFound from '../pages/NotFound';
-import Layout from '../containers/Layout';
-import Login from '../containers/Login';
-import CreateAccount from '../containers/CreateAccount';
-import RecoveryPassword from '../containers/RecoveryPassword';
+import '@styles/global.scss';
+import Home from '@pages/Home';
+import NotFound from '@pages/NotFound';
+import Layout from '@containers/Layout';
+import Login from '@containers/Login';
+import CreateAccount from '@containers/CreateAccount';
+import RecoveryPassword from '@containers/RecoveryPassword';
 
 const App = () => {
     return (
