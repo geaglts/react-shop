@@ -1,12 +1,14 @@
-import React from "react";
-import "../styles/global.scss";
+import React from 'react';
+import Layout from '../containers/Layout';
+import Login from '../containers/Login';
+import '../styles/global.scss';
 
 const App = () => {
-  return (
-    <div>
-      <h1>Funcionando</h1>
-    </div>
-  );
+    return (
+        <Layout>
+            <Login />
+        </Layout>
+    );
 };
 
 export default App;
