@@ -7,6 +7,7 @@ import Layout from '@containers/Layout';
 import Login from '@containers/Login';
 import CreateAccount from '@containers/CreateAccount';
 import RecoveryPassword from '@containers/RecoveryPassword';
+import MyAccount from '@containers/MyAccount';
 
 const App = () => {
     return (
@@ -17,6 +18,7 @@ const App = () => {
                     <Route exact path="/login" component={Login} />
                     <Route exact path="/signup" component={CreateAccount} />
                     <Route exact path="/recovery-password" component={RecoveryPassword} />
+                    <Route exact path="/my-account" component={MyAccount} />
                     <Route path="*" component={NotFound} />
                 </Switch>
             </Layout>
