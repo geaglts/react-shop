@@ -1,0 +1,28 @@
+.ShoppingCartOrder {
+    display: grid;
+    grid-template-columns: auto 1fr auto auto;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.ShoppingCartOrder figure {
+    margin: 0;
+}
+
+.ShoppingCartOrder figure img {
+    --image-size: 60px;
+    width: var(--image-size);
+    height: var(--image-size);
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.ShoppingCartOrder p:nth-child(2) {
+    color: var(--very-light-pink);
+}
+
+.ShoppingCartOrder p:nth-child(3) {
+    font-size: var(--md);
+    font-weight: bold;
+}
