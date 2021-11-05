@@ -11,9 +11,7 @@ import MyAccount from '@containers/MyAccount';
 import MyOrder from '@containers/MyOrder';
 import MyOrders from '@containers/MyOrders';
 import NewPassword from '@containers/NewPassword';
-
-import MobileMenu from '@containers/MobileMenu';
-import ProductDetail from '@containers/ProductDetail';
+import ShoppingCart from '@containers/ShoppingCart';
 
 const App = () => {
     return (
@@ -28,7 +26,7 @@ const App = () => {
                     <Route exact path="/my-order" component={MyOrder} />
                     <Route exact path="/my-orders" component={MyOrders} />
                     <Route exact path="/new-password" component={NewPassword} />
-                    <Route exact path="/test" component={ProductDetail} />
+                    <Route exact path="/shopping-cart" component={ShoppingCart} />
                     <Route path="*" component={NotFound} />
                 </Switch>
             </Layout>
