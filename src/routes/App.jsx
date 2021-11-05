@@ -10,6 +10,7 @@ import RecoveryPassword from '@containers/RecoveryPassword';
 import MyAccount from '@containers/MyAccount';
 import MobileMenu from '@containers/MobileMenu';
 import MyOrder from '@containers/MyOrder';
+import MyOrders from '@containers/MyOrders';
 
 const App = () => {
     return (
@@ -22,6 +23,7 @@ const App = () => {
                     <Route exact path="/recovery-password" component={RecoveryPassword} />
                     <Route exact path="/my-account" component={MyAccount} />
                     <Route exact path="/my-order" component={MyOrder} />
+                    <Route exact path="/my-orders" component={MyOrders} />
                     <Route exact path="/test" component={MobileMenu} />
                     <Route path="*" component={NotFound} />
                 </Switch>
