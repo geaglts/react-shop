@@ -8,10 +8,12 @@ import Login from '@containers/Login';
 import CreateAccount from '@containers/CreateAccount';
 import EmailSend from '@containers/EmailSend';
 import MyAccount from '@containers/MyAccount';
-import MobileMenu from '@containers/MobileMenu';
 import MyOrder from '@containers/MyOrder';
 import MyOrders from '@containers/MyOrders';
 import NewPassword from '@containers/NewPassword';
+
+import MobileMenu from '@containers/MobileMenu';
+import ProductDetail from '@containers/ProductDetail';
 
 const App = () => {
     return (
@@ -26,7 +28,7 @@ const App = () => {
                     <Route exact path="/my-order" component={MyOrder} />
                     <Route exact path="/my-orders" component={MyOrders} />
                     <Route exact path="/new-password" component={NewPassword} />
-                    <Route exact path="/test" component={MobileMenu} />
+                    <Route exact path="/test" component={ProductDetail} />
                     <Route path="*" component={NotFound} />
                 </Switch>
             </Layout>
