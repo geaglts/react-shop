@@ -6,9 +6,9 @@ const dummyImageUrl = 'https://images.pexels.com/photos/276517/pexels-photo-2765
 
 const ProductCard = () => {
     return (
-        <div class="ProductCard">
-            <img src={dummyImageUrl} alt="dummy product" class="ProductCard-img" />
-            <div class="ProductCard-info">
+        <div className="ProductCard">
+            <img src={dummyImageUrl} alt="dummy product" className="ProductCard-img" />
+            <div className="ProductCard-info">
                 <div>
                     <p>$120,00</p>
                     <p>Bike</p>
