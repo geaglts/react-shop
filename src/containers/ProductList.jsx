@@ -2,7 +2,7 @@ import React from 'react';
 import '@styles/ProductList.scss';
 import ProductCard from '@components/ProductCard';
 
-import useGetProducts from '../hooks/useGetProducts';
+import useGetProducts from '@hooks/useGetProducts';
 
 /**
  * Docs de la API 👉 https://api.escuelajs.co/docs/

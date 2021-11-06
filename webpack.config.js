@@ -20,6 +20,8 @@ module.exports = {
             '@containers': path.resolve(__dirname, 'src/containers'),
             '@components': path.resolve(__dirname, 'src/components'),
             '@utils': path.resolve(__dirname, 'src/utils'),
+            '@context': path.resolve(__dirname, 'src/context'),
+            '@hooks': path.resolve(__dirname, 'src/hooks'),
         },
     },
     module: {
