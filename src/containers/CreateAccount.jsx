@@ -1,7 +1,7 @@
 import React from 'react';
 import '@styles/CreateAccount.scss';
 
-import Button from '@components/Button';
+import FormButton from '@components/FormButton';
 
 const CreateAccount = () => {
     return (
@@ -21,7 +21,7 @@ const CreateAccount = () => {
                         Password
                     </label>
                     <input id="password" type="password" placeholder="*********" className="input input-password" />
-                    <Button label="Create" classes={['create-button']} />
+                    <FormButton label="Create" classes={['create-button']} />
                 </form>
             </div>
         </div>

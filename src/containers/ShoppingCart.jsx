@@ -1,6 +1,6 @@
 import React from 'react';
 import '@styles/ShoppingCart.scss';
-import Button from '@components/Button';
+import FormButton from '@components/FormButton';
 
 import iconArrow from '@icons/flechita.svg';
 import ShoppingCartProduct from '@components/ShoppingCartProduct';
@@ -20,7 +20,7 @@ const ShoppingCart = () => {
                     <p>Total</p>
                     <p>$560.00</p>
                 </div>
-                <Button label="Checkout" classes={['checkout-button']} />
+                <FormButton label="Checkout" classes={['checkout-button']} />
             </div>
         </aside>
     );

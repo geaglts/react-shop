@@ -1,6 +1,6 @@
 import React from 'react';
 import '@styles/EmailSend.scss';
-import Button from '@components/Button';
+import FormButton from '@components/FormButton';
 
 import logoYardSale from '@logos/logo_yard_sale.svg';
 import iconEmail from '@icons/email.svg';
@@ -15,7 +15,7 @@ const EmailSend = () => {
                 <div className="email-image">
                     <img src={iconEmail} alt="correo de yard sale" />
                 </div>
-                <Button label="Login" classes={['login-button']} />
+                <FormButton label="Login" classes={['login-button']} />
                 <p className="resend">
                     Didn't receive the email? <a href="/">Resend</a>
                 </p>
