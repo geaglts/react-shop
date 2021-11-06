@@ -1,12 +1,13 @@
 import React from 'react';
-import '@styles/RecoveryPassword.scss';
+import '@styles/EmailSend.scss';
+import Button from '@components/Button';
 
 import logoYardSale from '@logos/logo_yard_sale.svg';
 import iconEmail from '@icons/email.svg';
 
-const RecoveryPassword = () => {
+const EmailSend = () => {
     return (
-        <div className="emailSend">
+        <div className="EmailSend">
             <div className="container">
                 <img src={logoYardSale} alt="logo de yard sale" className="logo" />
                 <h1 className="title">Email has been sent!</h1>
@@ -14,7 +15,7 @@ const RecoveryPassword = () => {
                 <div className="email-image">
                     <img src={iconEmail} alt="correo de yard sale" />
                 </div>
-                <button className="primary-button login-button">Login</button>
+                <Button label="Login" classes={['login-button']} />
                 <p className="resend">
                     Didn't receive the email? <a href="/">Resend</a>
                 </p>
@@ -23,4 +24,4 @@ const RecoveryPassword = () => {
     );
 };
 
-export default RecoveryPassword;
+export default EmailSend;

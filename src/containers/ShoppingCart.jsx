@@ -1,5 +1,6 @@
 import React from 'react';
 import '@styles/ShoppingCart.scss';
+import Button from '@components/Button';
 
 import iconArrow from '@icons/flechita.svg';
 import ShoppingCartProduct from '@components/ShoppingCartProduct';
@@ -19,7 +20,7 @@ const ShoppingCart = () => {
                     <p>Total</p>
                     <p>$560.00</p>
                 </div>
-                <button className="primary-button checkout-button">Checkout</button>
+                <Button label="Checkout" classes={['checkout-button']} />
             </div>
         </aside>
     );

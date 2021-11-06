@@ -1,6 +1,6 @@
 @use './vars';
 
-.emailSend {
+.EmailSend {
     width: 100%;
     height: 100vh;
     display: grid;
@@ -50,18 +50,6 @@
 
 .email-image img {
     width: 75px;
-}
-
-.primary-button {
-    background-color: var(--hospital-green);
-    border: none;
-    border-radius: 8px;
-    color: var(--white);
-    width: 100%;
-    cursor: pointer;
-    font-size: var(--md);
-    font-weight: bold;
-    height: 50px;
 }
 
 .resend {

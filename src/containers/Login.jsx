@@ -1,5 +1,6 @@
 import React from 'react';
 import '@styles/Login.scss';
+import Button from '@components/Button';
 
 import logoYardSale from '@logos/logo_yard_sale.svg';
 
@@ -17,10 +18,10 @@ const login = () => {
                         Password
                     </label>
                     <input id="password" type="password" placeholder="*********" className="input input-password" required />
-                    <input type="submit" value="Confirm" className="primary-button login-button" />
+                    <Button label="Confirm" classes={['login-button']} />
                     <a href="/">Forgot my password</a>
                 </form>
-                <button className="secondary-button signup-button">Sign up</button>
+                <Button label="Sign up" type="secondary" classes={['signup-button']} />
             </div>
         </div>
     );

@@ -1,5 +1,6 @@
 import React from 'react';
 import '@styles/NewPassword.scss';
+import Button from '@components/Button';
 
 import logoYardSale from '@logos/logo_yard_sale.svg';
 
@@ -19,7 +20,7 @@ const NewPassword = () => {
                         Re-enter password
                     </label>
                     <input id="confirmPassword" type="password" placeholder="*********" className="input input-password" />
-                    <input type="submit" value="Confirm" className="primary-button login-button" />
+                    <Button label="Confirm" classes={['confirm-password-button']} />
                 </form>
             </div>
         </div>

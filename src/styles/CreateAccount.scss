@@ -37,7 +37,7 @@
     font-size: var(--md);
     border-radius: 8px;
     padding: 6px;
-    height: 30px;
+    height: 45px;
     margin-bottom: 12px;
 }
 
@@ -45,18 +45,6 @@
 .input-email,
 .input-password {
     margin-bottom: 22px;
-}
-
-.primary-button {
-    background-color: var(--hospital-green);
-    border: none;
-    border-radius: 8px;
-    color: var(--white);
-    width: 100%;
-    cursor: pointer;
-    font-size: var(--md);
-    font-weight: bold;
-    height: 50px;
 }
 
 .create-button {

@@ -1,5 +1,6 @@
 import React from 'react';
 import '@styles/MyAccount.scss';
+import Button from '@components/Button';
 
 const MyAccount = () => {
     return (
@@ -19,7 +20,7 @@ const MyAccount = () => {
                         Password
                     </label>
                     <p className="value">********</p>
-                    <input type="submit" value="Edit" className="secondary-button edit-button" />
+                    <Button label="Edit" type="secondary" classes={['edit-button']} />
                 </form>
             </div>
         </div>

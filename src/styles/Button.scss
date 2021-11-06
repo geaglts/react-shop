@@ -1,0 +1,24 @@
+@use './vars';
+
+.input {
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: var(--md);
+    font-weight: bold;
+    height: 50px;
+    width: 300px;
+}
+
+input[type='button'].primary {
+    background-color: var(--hospital-green);
+    border: none;
+    color: var(--white);
+    @extend .input;
+}
+
+input[type='button'].secondary {
+    background-color: var(--white);
+    border: 1px solid var(--hospital-green);
+    color: var(--hospital-green);
+    @extend .input;
+}

@@ -54,33 +54,9 @@
     margin-bottom: 20px;
 }
 
-.primary-button {
-    background-color: var(--hospital-green);
-    border: none;
-    border-radius: 8px;
-    color: var(--white);
-    width: 100%;
-    cursor: pointer;
-    font-size: var(--md);
-    font-weight: bold;
-    height: 50px;
-}
-
 .login-button {
     margin-top: 14px;
     margin-bottom: 30px;
-}
-
-.secondary-button {
-    background-color: var(--white);
-    border: 1px solid var(--hospital-green);
-    color: var(--hospital-green);
-    border-radius: 8px;
-    width: 100%;
-    cursor: pointer;
-    font-size: var(--md);
-    font-weight: bold;
-    height: 50px;
 }
 
 @media (max-width: 640px) {
@@ -90,7 +66,6 @@
 
     .signup-button {
         position: absolute;
-        width: 300px;
         bottom: 20px;
     }
 }
