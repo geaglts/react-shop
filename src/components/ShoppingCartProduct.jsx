@@ -4,10 +4,10 @@ import ShoppingCartOrder from '@components/ShoppingCartOrder';
 
 import iconClose from '@icons/icon_close.png';
 
-const ShoppingCartProduct = () => {
+const ShoppingCartProduct = ({ product }) => {
     return (
         <div className="ShoppingCartProduct">
-            <ShoppingCartOrder />
+            <ShoppingCartOrder product={product} />
             <button className="delete-product-button">
                 <img src={iconClose} alt="delete product" />
             </button>
