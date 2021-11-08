@@ -7,7 +7,7 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, 'build'),
         filename: 'bundle.[contenthash].js',
-        publicPath: '/',
+        clean: true,
     },
     mode: 'production',
     resolve: {
