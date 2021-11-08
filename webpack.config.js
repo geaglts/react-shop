@@ -6,9 +6,8 @@ module.exports = {
     entry: './src/index.js',
     output: {
         path: path.resolve(__dirname, 'build'),
-        filename: 'bundle.[contenthash].js',
+        filename: 'bundle.js',
         publicPath: '/',
-        clean: true,
     },
     mode: 'production',
     resolve: {
@@ -51,14 +50,7 @@ module.exports = {
             },
         ],
     },
-    plugins: [
-        new HTMLPlugin({
-            template: './public/index.html',
-            filename: 'index.html',
-            inject: 'body',
-        }),
-        new MiniCssExtractPlugin({ filename: '[name].[contenthash].css' }),
-    ],
+    plugins: [new HTMLPlugin({ template: './public/index.html', filename: './index.html' }), new MiniCssExtractPlugin({ filename: '[name].css' })],
     devServer: {
         port: 3000,
         historyApiFallback: true,
