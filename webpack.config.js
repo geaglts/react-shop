@@ -5,11 +5,11 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 module.exports = {
     entry: './src/index.js',
     output: {
-        path: path.resolve(__dirname, 'dist'),
-        filename: 'bundle.js',
+        path: path.resolve(__dirname, 'build'),
+        filename: 'bundle.[contenthash].js',
         publicPath: '/',
     },
-    mode: 'development',
+    mode: 'production',
     resolve: {
         extensions: ['.js', '.jsx'],
         alias: {
@@ -53,9 +53,10 @@ module.exports = {
     plugins: [
         new HTMLPlugin({
             template: './public/index.html',
-            filename: './index.html',
+            filename: 'index.html',
+            inject: 'body',
         }),
-        new MiniCssExtractPlugin({ filename: '[name].css' }),
+        new MiniCssExtractPlugin({ filename: '[name].[contenthash].css' }),
     ],
     devServer: {
         port: 3000,
